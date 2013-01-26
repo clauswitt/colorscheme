@@ -1,6 +1,17 @@
 # Colorscheme
 
-TODO: Write a gem description
+Colorscheme is a gem for creating a colorscheme from a known source - either a website, an image or a (set) of color(s). The gem can be used to generate a set of colors to be used in a websites stylesheet. 
+
+It will give your options of getting the following types of colorschemes: 
+
+ - Monochromatic
+ - Complementary
+ - Analogous
+ - Triadic
+ - Split-Complimentary
+ - Tetradic
+ - Square
+
 
 ## Installation
 
