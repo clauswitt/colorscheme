@@ -1,5 +1,5 @@
 require "colorscheme/version"
 
-module Colorscheme
-  # Your code goes here...
+class Colorscheme
+
 end
