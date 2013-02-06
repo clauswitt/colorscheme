@@ -1,5 +1,4 @@
 require "colorscheme/version"
-
-class Colorscheme
-
+require "colorscheme/colorscheme"
+module Colorscheme
 end
