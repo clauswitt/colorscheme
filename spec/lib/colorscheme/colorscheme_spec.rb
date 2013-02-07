@@ -14,13 +14,6 @@ describe Colorscheme::Colorscheme do
     end
   end
 
-  describe ".colors" do
-    it "returns an array of colors with correct length" do
-      scheme = Colorscheme::Colorscheme.new({:count => 5})
-      scheme.colors.should have(5).items
-    end
-  end
-
   describe ".source_color" do
     it "sets the source_color on the object" do
       color = Color::RGB.new(1,2,3)
