@@ -55,5 +55,14 @@ module Colorscheme
       @colors.push rotate_color(@source_color, 180)
       @colors.push rotate_color(@source_color, 270)
     end
+
+    def text_color(source)
+      sum = source.red + source.green + source.blue
+      if sum > 382.5
+        return Color::RGB.new(0,0,0)
+      else
+        return Color::RGB.new(255,255,255)
+      end
+    end
   end
 end

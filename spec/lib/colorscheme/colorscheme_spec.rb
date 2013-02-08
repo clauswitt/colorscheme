@@ -96,4 +96,31 @@ describe Colorscheme::Colorscheme do
       scheme.colors[3].html.should eq(quad3.html)
     end
   end
+
+  describe ".text_color" do
+    it "selects black for white source" do
+      color = Color::RGB.new(255,255,255)
+      scheme = Colorscheme::Colorscheme.new
+      text_color = scheme.text_color(color)
+      text_color.html.should eq('#000000')
+    end
+    it "selects white for black source" do
+      color = Color::RGB.new(0,0,0)
+      scheme = Colorscheme::Colorscheme.new
+      text_color = scheme.text_color(color)
+      text_color.html.should eq('#ffffff')
+    end
+    it "selects white for #666666" do
+      color = Color::RGB.from_html('#666666')
+      scheme = Colorscheme::Colorscheme.new
+      text_color = scheme.text_color(color)
+      text_color.html.should eq('#ffffff')
+    end
+    it "selects black for #aaaaaa" do
+      color = Color::RGB.from_html('#aaaaaa')
+      scheme = Colorscheme::Colorscheme.new
+      text_color = scheme.text_color(color)
+      text_color.html.should eq('#000000')
+    end
+  end
 end
