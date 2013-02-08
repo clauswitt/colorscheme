@@ -8,9 +8,15 @@ It will give your options of getting the following types of colorschemes:
  - Complementary
  - Analogous
  - Triadic
- - Split-Complimentary
+ - Split-Complementary
  - Tetradic
  - Square
+
+### Currently working version:
+
+You can only get colors as Color objects (from the Color gem) and you can only get colorschemes from a known color (again, a Color object from the Color gem).
+
+The only implemented schemes are: Complementary, Analogous, Triadic, Split-Complementary and Square.
 
 
 ## Installation
@@ -29,7 +35,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+scheme = Colorscheme::Colorscheme.new(Color.RGB.new(255,0,0))
+scheme.triadic!
+scheme.colors # is an array of three colors
+```
 
 ## Contributing
 
