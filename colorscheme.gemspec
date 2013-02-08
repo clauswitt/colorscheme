@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Claus Witt"]
   gem.email         = ["claus@wittnezz.dk"]
   gem.description   = %q{Create colorschemes from known values}
-  gem.summary       = %q{TODO: Given a source - a website, and image or a color - the gem returns a colorscheme}
+  gem.summary       = %q{Given a source - a website, and image or a color - the gem returns a colorscheme}
   gem.homepage      = "http://clauswitt.com/gems/colorscheme"
 
   gem.files         = `git ls-files`.split($/)
