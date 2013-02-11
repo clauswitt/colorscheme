@@ -36,8 +36,7 @@ Or install it yourself as:
 ## Usage
 
 ```
-scheme = Colorscheme::Colorscheme.new(Color.RGB.new(255,0,0))
-scheme.triadic!
+scheme = Colorscheme::Triadic.new(Color.RGB.new(255,0,0))
 scheme.colors # is an array of three colors
 ```
 
